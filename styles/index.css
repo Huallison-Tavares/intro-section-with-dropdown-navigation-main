@@ -1,0 +1,221 @@
+*{
+    box-sizing: content-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+header{
+    width: 100%;
+    height: calc(100% - 90%);
+    display: flex;
+}
+
+header > .mobile{
+    display: none;
+}
+
+header > .desktop{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header > .desktop > .login,
+header > .desktop > .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+header > .desktop > .logo > nav{
+    height: 100%;
+}
+header > .desktop > .logo > nav > ul{
+    display: flex;
+    cursor: pointer;
+    margin: 0;
+    height: 100%;
+}
+
+.logo > nav > ul > li{
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+header > .desktop > .logo > img{
+    width: calc(100% / 2.5);
+    height: calc(100% / 2.5);
+}
+
+header > .desktop > .login > p{
+    padding: 0px 20px;
+    margin: 0px 10px;
+}
+
+p.register{
+    border: 2px hsl(0, 0%, 41%) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.login > p > a,
+.logo > nav > ul > li,
+.logo > nav > ul > li > p,
+ul.open > li{
+    color: hsl(0, 0%, 41%);
+}
+
+.login > p > a:hover,
+.logo > nav > ul > li:hover,
+.logo > nav > ul > li > p:hover,
+ul.open > li:hover{
+    color: black;
+}
+
+.login > p.register:hover{
+    border: 2px black solid;
+}
+
+li.abrir{
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.abrir > p{
+    display: flex;
+    align-items: center;
+}
+
+li.abrir > p > img{
+    width: 10px;
+    height: 5px;
+    padding: 0px 5px;
+}
+
+ul.open,
+ul.close{
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 20px  #cecece;
+    padding: 0px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+ul.open{
+    opacity: 1;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+ul.close{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+}
+
+#features{
+    height: 160px; 
+    width: 150px; 
+    margin: 220px 50px 0px 0px;
+}
+
+
+#company{
+    height: 110px; 
+    width: 100px;
+    margin:170px 0px 0px 40px;
+}
+ul.open > li,
+ul.close > li{
+    padding: 5px 0px 5px 15px;
+}
+
+ul.open > li > img,
+ul.close > li > img{
+    margin-right: 10px;
+}
+
+#imgmobile{
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px 0px 150px;
+    max-height: 80vh;
+}
+
+main > .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+main > .left > .h1d > h1{
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+.h1m{
+    display: none;
+}
+
+main > .left > p{
+    font-size: 14pt;
+    width: 450px;
+    color: hsl(0, 0%, 41%);
+}
+
+main > .left > button{
+    padding: 12px 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+main > .left > button:hover{
+    color: black;
+    background-color: white;
+}
+
+main > .left  > .publi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 80px;
+}
+main > .right > img{
+    width: 430px;
+}

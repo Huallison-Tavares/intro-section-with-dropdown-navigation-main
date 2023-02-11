@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+<body>
+    <header>
+        <div class="desktop">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="logo">
+                <nav>
+                    <ul>
+                        <li class="abrir">
+                            <p>
+                                Features
+                                <img src="./images/icon-arrow-up.svg" alt="icon-arrow-up">
+                            </p>
+                            <ul class="close" id="features">
+                                <li><img src="./images/icon-todo.svg" alt="Todo List">Todo List</li>
+                                <li><img src="./images/icon-calendar.svg" alt="Calendar">Calendar</li>
+                                <li><img src="./images/icon-reminders.svg" alt="Reminders">Reminders</li>
+                                <li><img src="./images/icon-planning.svg" alt="Planning">Planning</li>
+                            </ul>
+                        </li>
+                        <li class="abrir">
+                            <p>Company <img src="./images/icon-arrow-up.svg" alt="icon-arrow-up"></p>
+                            <ul class="close" id="company" >
+                                <li>History</li>
+                                <li>Our Team</li>
+                                <li>Blog</li>
+                            </ul></li>
+                        <li>Careers</li>
+                        <li>About</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login">
+                <p><a href="#">Login</a></p>
+                <p class="register"><a href="#">Register</a></p>
+            </div>
+                
+        </div>
+        <div class="mobile">
+            <img src="./images/logo.svg" alt="logo" id="logo">
+            <img src="./images/icon-menu.svg" alt="icon-menu" id="menu">
+
+            <div class="fechado">
+                <div class="content">
+                    <img src="./images/icon-close-menu.svg" id="close-menu" alt="close-menu">
+                    <nav>
+                        <ul>
+                            <li class="abre">
+                                <p>
+                                    Features
+                                    <img src="./images/icon-arrow-up.svg" alt="icon-arrow-up">
+                                </p>
+                                <ul class="fech" id="features-mob">
+                                    <li><img src="./images/icon-todo.svg" alt="Todo List">Todo List</li>
+                                    <li><img src="./images/icon-calendar.svg" alt="Calendar">Calendar</li>
+                                    <li><img src="./images/icon-reminders.svg" alt="Reminders">Reminders</li>
+                                    <li><img src="./images/icon-planning.svg" alt="Planning">Planning</li>
+                                </ul>
+                            </li>
+                            <li class="abre">
+                                <p>Company <img src="./images/icon-arrow-up.svg" alt="icon-arrow-up"></p>
+                                <ul class="fech" id="company-mob" >
+                                    <li>History</li>
+                                    <li>Our Team</li>
+                                    <li>Blog</li>
+                                </ul></li>
+                            <li>Careers</li>
+                            <li>About</li>
+                        </ul>
+                    </nav>
+                    <div class="login">
+                        <p><a href="#">Login</a></p>
+                        <p class="register"><a href="#">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="left">
+            <div class="h1d">
+                <h1>Make <br> remote work</h1>
+            </div>
+            <div class="h1m">
+                <h1>Make remote work</h1>
+            </div>
+            <p>Get your team in sync, no matter your location. Streamline processes, 
+                create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn More</button>
+
+            <div class="publi">
+                <img src="./images/client-databiz.svg" alt="databiz">
+                <img src="./images/client-audiophile.svg" alt="audiophile">
+                <img src="./images/client-meet.svg" alt="meet">
+                <img src="./images/client-maker.svg" alt="maker">
+            </div>
+        
+        
+        </div>
+        <div class="right">
+            <img src="./images/image-hero-desktop.png" id="imgdesktop" alt="imgdesktop">
+            <img src="./images/image-hero-mobile.png" id="imgmobile" alt="imgmobile">
+        </div>
+    </main>
+
+    
+    <script src="./styles/index.js"></script>
+    <script src="./styles/mobile.js"></script>
+
+</body>
+</html>
